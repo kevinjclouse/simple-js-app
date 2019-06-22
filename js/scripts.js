@@ -17,17 +17,13 @@ var repository = [
 ];
 
 // for (var i = 0; i < repository.length; i++) {
-  // var bigPoke = ""
-  // if (repository[i].height > 6) {
-    // bigPoke = "Wow, that's big!"
+//   var bigPoke = ""
+//   if (repository[i].height > 6) {
+//     bigPoke = "Wow, that's big!"
   // }
   // document.write('<p>' + '<strong>' + repository[i].name + '</strong>' + ' -' + ' Height: ' + repository[i].height + ' - Abilities: ' + repository[i].types + ' ' + bigPoke);
 // }
 
 repository.forEach(function(currentName){
-  document.write(currentName)
-});
-
-Object.keys().forEach(function(property) {
-  document.write({property});
+  document.write('<p>' + '<strong>' + '<h1>' + currentName.name + ' : ' + '</h1>' + '</strong>' + ' Height ' + '<strong>' + ' : ' + '</strong>' + currentName.height + ' Type ' + ' = ' + currentName.types);
 });
