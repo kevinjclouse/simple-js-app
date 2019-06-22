@@ -16,10 +16,18 @@ var repository = [
   }
 ];
 
-for (var i = 0; i < repository.length; i++) {
-  var bigPoke = ""
-  if (repository[i].height > 6){
-    bigPoke = "Wow, that's big!"
-  }
-  document.write('<p>' + '<strong>' + repository[i].name + '</strong>' + ' -' + ' Height: ' + repository[i].height + ' - Abilities: ' + repository[i].types + ' ' + bigPoke);
-}
+// for (var i = 0; i < repository.length; i++) {
+  // var bigPoke = ""
+  // if (repository[i].height > 6) {
+    // bigPoke = "Wow, that's big!"
+  // }
+  // document.write('<p>' + '<strong>' + repository[i].name + '</strong>' + ' -' + ' Height: ' + repository[i].height + ' - Abilities: ' + repository[i].types + ' ' + bigPoke);
+// }
+
+repository.forEach(function(currentName){
+  document.write(currentName)
+});
+
+Object.keys().forEach(function(property) {
+  document.write({property});
+});
